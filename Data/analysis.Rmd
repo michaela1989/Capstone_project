@@ -1,0 +1,107 @@
+---
+title: "analysis"
+author: "DBIAT"
+date: "Saturday, May 30, 2015"
+output: html_document
+---
+
+#Data Analyses for the Emotion and Recall YouTube Experiment
+
+###Dominic B.I.A. Tzimisces
+
+##INTRODUCTION
+
+This analysis was created to explain the data analysis behind the [Emotion and Recall YouTube Experiment](https://www.youtube.com/watch?v=iphxvoAOpE4).  All the materials--the videos, informed consent, etc.--can be found at the above link.  NOTE BENE:  the link--and the videos--do not work properly on Apple products that do not contain Flash support, nor do they work in many smartphones (which, likewise, often do not have Flash support).  Following the links is best done on a PC. 
+
+There are two datasets that were analyzed.  One set ("affect.csv" or "affect") is representative of observations from 43 participants who participated in the experiment, both those who participated for college extra credit (EOU students) and lay participants who received no compensation.  A second dataset ("affect2.csv" or "affect2") is actually a subset of "affect" and is representative of only those 19 participants who did not participate in the experiment for extra credit (that is, it is exclusively non-EOU students).  Other than the division between students and non-students, both datasets were analyzed identically.
+
+Although there were quite a number of variables included in the raw data, only the variables valence, arousal, and number of correct responses were analyzed, as they dealt specifically with the primary hypotheses.  It is these three variables which are included in the presentation and poster.
+
+##DATA PREPARATION
+
+First, the data needed to be 'read' by rStudio...
+
+```{r}
+affect<-read.csv("affect.csv")
+```
+
+Next, there was the need to change 'subject' into a factor...
+
+```{r}
+affect$subject<-factor(affect$subject)
+```
+
+Check the structure to see if the change took...
+
+```{r}
+str(affect)
+```
+
+##PRIMARY ANALYSES
+
+The variable of interest is memory as measured by word recall.
+
+There are two factors being studied (valence/arousal). Each factor has two levels: Valence (negative/positive) and Arousal (high/low)
+
+There are three null hypotheses to be tested: H01: Both valence groups have, on the average, equal word recall. H02: Both arousal groups have, on the average, equal word recall. H03: The two factors-valence and arousal-are independent.
+
+Since we have multiple factors and levels, we need to use a two-way between-subjects ANOVA.
+
+What we're looking for is to see whether or not we can predict the number of correctly recalled words from valence and arousal, utilizing first the comprehensive dataset (affect.csv):
+
+```{r}
+summary(aov(correct~valence*arousal,data=affect))
+```
+
+From the results of the combined dataset, F(1,39)=2.28, p=0.14 and F(1,39)=39, p=0.97, we can conclude that the number of correctly recalled words is not associated with valence or arousal.  The data failed to reject the null.
+
+However, there appeared to be an interesting pattern I discerned as I did a cursory check through the data:  it appeared as if those who took the experiment for extra credit--irrespective of valence or arousal level--reported less recalled words.  This led me to probe deeper...
+
+```{r}
+affect2<-read.csv("affect2.csv")
+```
+
+Once again, there is the need to change 'subject' into a factor...
+
+```{r}
+affect2$subject<-factor(affect2$subject)
+```
+
+Check the structure to see if the change took...
+
+```{r}
+str(affect2)
+```
+
+Now let's run the two-way between-subjects ANOVA once more...
+
+```{r}
+summary(aov(correct~valence*arousal,data=affect2))
+```
+
+In this non-student dataset, at F(1,15)=4.89, p=0.043, we can conclude that the number of correctly recalled words is significantly associated with valence but at F(1,15)=0.95, p=0.35, it is not significantly associated with the level of arousal. Additionally, at F(1,15)=0.20, p=0.66, there were no interactions between valence and arousal.
+
+##SUPPLEMENTARY ANALYSES
+
+The following analysis was done to ascertain whether or not valence and/or arousal interacted with the number of responses the participants gave, irrespective of whether or not they were correct (listed as "thought" factor in both datasets).
+
+First, using the combined dataset...
+
+```{r}
+summary(aov(thought~valence*arousal,data=affect))
+```
+
+No significant interactions.
+
+Now, let's check the non-student ("affect2") dataset...
+
+```{r}
+summary(aov(thought~valence*arousal,data=affect2))
+```
+
+No significant interactions here, either.
+
+##SUMMARY
+
+Although YouTube appears to be a viable platform for experimental use in between-subjects quasi-experiments, there are limitations this study brought out. However, given the proper instructions and participant fidelity to them, there is no reason why YouTube experimentation and quasi-experimentation could not be expanded for certain studies.
+
