@@ -3,9 +3,9 @@
 The data in <u>"affect all participants.csv"</u> represent data emailed to me by random participants, as well as current Eastern Oregon University students seeking extra credit, following their participation in my YouTube video experiment, beginning with [Informed Consent for Emotion and Recall](https://www.youtube.com/watch?v=iphxvoAOpE4)
 and the completion of other videos following the initial consent. These data were compiled using the preprocessing.R R script and are suitable for data analysis.
 
-The data file includes 10 columns of information. There were only _____ variables however.
-The extra data was used to ensure accurate condition number chosen by participants, as well as
-ensuring an equal range of sex, age, and conditions, to eliminate potential _________.
+The data file includes 10 columns of information. There were only 3 variables however: valence, affect, and number of correct responses. 
+
+The extra data was used to ensure accurate condition number chosen by participants, as well as ensuring an equal range of sex, age, and conditions, to reduce the risk of bias results.
 
 The variable of interest is memory as measured by word recall. 
 There are two factors being studied: valence and arousal. 
