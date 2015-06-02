@@ -7,7 +7,7 @@ output: html_document
 
 #Data Analyses for the Emotion and Recall YouTube Experiment
 
-###Michaela Herschler
+###Michaela
 
 ##INTRODUCTION
 
