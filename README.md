@@ -8,11 +8,12 @@ This study was conducted in an attempt to broadly delineate the effects of affec
 **Guide to the Repository Contents**
 
 * **data**: a folder containing the following:
-    * affect all participants.csv: All data collected from participants.
-    * affect without extra credit.csv: A subset of "affect all participants" representing only those 19 participants who did not participate in the experiment for extra credit.
+    * affect.csv: All data collected from participants.
+    * affect2.csv: A subset of "affect.csv" representing only those 19 participants who did not participate in the experiment for extra credit.
     * analysis.Rmd: A R Markdown file that walks through my data analyses and creates the figure I used in my poster.
     * analysis.html: An html file of the R script that does everything analysis.Rmd does without the markdown.
-    *<b>fig1.png: The figure I created for the presentation</b>
+    *Figure.png: The figure I created for the presentation
+    *codebook.md: A key of what all catergories and terms mean from the data files to assist in replicating the study.
 
 * **materials**: a folder containing materials used in the experiments.
     * Affective words video.mp4: Windows media player file of the words presented in the study for participants.
@@ -25,9 +26,10 @@ This study was conducted in an attempt to broadly delineate the effects of affec
     * Instructions video.mp4: Windows media player file of the instructions presented in the study for participants.
     * Instructions.pptx:  A PowerPoint view of the instructions for the ability to edit or use for replication.
     * Links to YouTube videos.pdf: A Pdf file providing links to the YouTube videos used in the study.
+    * Debriefing: Our debriefing offered to participants following the study.
     * wordcomp.pdf: A copy of the copyrighted Word Completion Task used to gather the twenty words used in this study. 
 * **Presentation**: A folder containing the presentation materials that includes:
-
+    * README.md: Provides the link for the presentation.
 
 
 * **README.md**: A README file of the information on this page.
