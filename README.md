@@ -12,8 +12,8 @@ This study was conducted in an attempt to broadly delineate the effects of affec
     * affect2.csv: A subset of "affect.csv" representing only those 19 participants who did not participate in the experiment for extra credit.
     * analysis.Rmd: A R Markdown file that walks through my data analyses and creates the figure I used in my poster.
     * analysis.html: An html file of the R script that does everything analysis.Rmd does without the markdown.
-    *Figure.png: The figure I created for the presentation
-    *codebook.md: A key of what all catergories and terms mean from the data files to assist in replicating the study.
+    * Figure.png: The figure I created for the presentation
+    * codebook.md: A key of what all catergories and terms mean from the data files to assist in replicating the study.
 
 * **materials**: a folder containing materials used in the experiments.
     * Affective words video.mp4: Windows media player file of the words presented in the study for participants.
