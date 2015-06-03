@@ -61,50 +61,31 @@ img {
 
 
 
-<div id="psy-441-capstone-project" class="section level1">
-<h1>Psy 441 Capstone Project</h1>
-<div id="the-effects-of-induced-affect-on-word-recall" class="section level2">
-<h2>The Effects of Induced Affect on Word Recall</h2>
-<div id="by-michaela" class="section level3">
-<h3>By Michaela</h3>
-</div>
-</div>
-<div id="introduction" class="section level2">
-<h2>Introduction</h2>
-<p>This study was conducted in an attempt to broadly delineate the effects of affect on recall as well as take into account the influence of arousal levels. It was hypothesized that the effects of induced positive affect would improve recollection of neutrally valenced words whereas induced negative affect would deleteriously affect recollection. In addition, higher arousal levels, irrespective of the valence of induced affect, would improve recollection. Therefore, induced positive affect, in combination with high levels of arousal, should demonstrate the largest improvement in recall, whereas induced negative affect, in combination with low levels of arousal, should demonstrate the largest deficit in recollection. Previous researchers that have utilized affect induction via film in the service of memory studies often attempted to measure several items, wherein researchers measured how much participants recalled film and contextual detail as well as words presented as the clip was shown. In such complex experiments, there is always the risk that the attempt to measure so many factors may confound or confuse the results. This study sought to avoid those concerns through a singular focus on word-recall, with the content of the film used for affect induction only.</p>
-<p><strong>Guide to the Repository Contents</strong></p>
+<div id="codebook-for-affect.csv" class="section level1">
+<h1>Codebook for “affect.csv”</h1>
+<p>The data in <u>affect.csv</u> represent data emailed to me by random participants, as well as current Eastern Oregon University students seeking extra credit, following their participation in my YouTube video experiment, beginning with <a href="https://www.youtube.com/watch?v=iphxvoAOpE4">Informed Consent for Emotion and Recall</a> and the completion of other videos following the initial consent. These data were compiled using the preprocessing.R R script and are suitable for data analysis.</p>
+<p>The data file includes 10 columns of information. There were only 3 variables however: valence, affect, and number of correct responses.</p>
+<p>The extra data was used to ensure accurate condition number chosen by participants, as well as ensuring an equal range of sex, age, and conditions, to reduce the risk of bias results.</p>
+<p>The variable of interest is memory as measured by word recall. There are two factors being studied: valence and arousal. And each factor has two levels: valence (negative and positive) and arousal (high and low).</p>
 <ul>
-<li><strong>data</strong>: a folder containing the following:
+<li><p><strong>subject</strong>: We numbered the individual participants in no particular order aside from the order they were received.</p></li>
+<li><p><strong>affect</strong>: NL=negative valence, low arousal; NH=negative valence, high arousal; PL=postive valence, low arousal; PH=postive valense, high arousal</p></li>
+<li><p><strong>condition</strong>: The condition number assigned to each affect. There were 4 condition options and participants were to select the condition number labeled with their month of birth.</p>
 <ul>
-<li>affect.csv: All data collected from participants.</li>
-<li>affect2.csv: A subset of “affect.csv” representing only those 19 participants who did not participate in the experiment for extra credit.</li>
-<li>analysis.Rmd: A R Markdown file that walks through my data analyses and creates the figure I used in my poster.</li>
-<li>analysis.html: An html file of the R script that does everything analysis.Rmd does without the markdown.</li>
-<li>Figure.png: The figure I created for the presentation</li>
-<li>codebook.md: A key of what all catergories and terms mean from the data files to assist in replicating the study.</li>
-</ul></li>
-<li><strong>materials</strong>: a folder containing materials used in the experiments.
-<ul>
-<li>Affective words video.mp4: Windows media player file of the words presented in the study for participants.</li>
-<li>Affective Words.pptx: A PowerPoint view of the words presented for the ability to edit or use for replication.</li>
-<li>IRB Approval letter.pdf: an edited version of IRB approval for this project.</li>
-<li>Informed Consent document format.pdf: Pdf version of the informed consent for the ability to edit or use for replication.</li>
-<li>Informed Consent.pptx: A PowerPoint view of the informed consent for the ability to edit or use for replication.<br /></li>
-<li>Instructions Post-Video.mp4: Windows media player file of the instructions following the study presented to participants.</li>
-<li>Instructions Post.pptx: A PowerPoint view of the instructions for the ability to edit or use for replication.</li>
-<li>Instructions video.mp4: Windows media player file of the instructions presented in the study for participants.</li>
-<li>Instructions.pptx: A PowerPoint view of the instructions for the ability to edit or use for replication.</li>
-<li>Links to YouTube videos.pdf: A Pdf file providing links to the YouTube videos used in the study.</li>
-<li>Debriefing: Our debriefing offered to participants following the study.</li>
-<li>wordcomp.pdf: A copy of the copyrighted Word Completion Task used to gather the twenty words used in this study.</li>
-</ul></li>
-<li><strong>Presentation</strong>: A folder containing the presentation materials that includes:
-<ul>
-<li>README.md: Provides the link for the presentation.</li>
-</ul></li>
-<li><strong>README.md</strong>: A README file of the information on this page.</li>
+<li>Condition 1=January, May, September</li>
+<li>Condition 2=February, June, October</li>
+<li>Condition 3=March, July, November</li>
+<li>Condition 4=April, August, December</li>
 </ul>
-</div>
+<p>The condition numbers were randomly assigned to each affect. Condition 1 was assigned to Negative Low, Condition 2 was assigned to Positive Low, Condition 3 was assigned to NegativeHigh, and Condition 4 was assigned to Positive High.</p></li>
+<li><p><strong>valence</strong>: A factor variable identifying the emotion being induced from the conditioned video assigned.</p></li>
+<li><p><strong>arousal</strong>: A factor variable indicating the level of emotion being induced.</p></li>
+<li><p><strong>total</strong>: The total number of words provided in the video.</p></li>
+<li><p><strong>thought</strong>: We asked participants to provide us their entire list of words so we couldcompare what they recalled to the actual list to ensure accurate responses, thus the number“thought” is the number of words they listed out as believing they remembered from the video.</p></li>
+<li><p><strong>correct</strong>: After comparing the “thought” recalled words with the actual list of words, this is the correct number recalled.</p></li>
+<li><p><strong>sex</strong>: Participants gender.</p></li>
+<li><p><strong>age</strong>: Age of participants.</p></li>
+</ul>
 </div>
 
 

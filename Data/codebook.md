@@ -1,6 +1,6 @@
-#Codebook for "affect all participants.csv"
+#Codebook for "affect.csv"
 
-The data in <u>"affect all participants.csv"</u> represent data emailed to me by random participants, as well as current Eastern Oregon University students seeking extra credit, following their participation in my YouTube video experiment, beginning with [Informed Consent for Emotion and Recall](https://www.youtube.com/watch?v=iphxvoAOpE4)
+The data in <u>affect.csv</u> represent data emailed to me by random participants, as well as current Eastern Oregon University students seeking extra credit, following their participation in my YouTube video experiment, beginning with [Informed Consent for Emotion and Recall](https://www.youtube.com/watch?v=iphxvoAOpE4)
 and the completion of other videos following the initial consent. These data were compiled using the preprocessing.R R script and are suitable for data analysis.
 
 The data file includes 10 columns of information. There were only 3 variables however: valence, affect, and number of correct responses. 
