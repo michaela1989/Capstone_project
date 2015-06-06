@@ -29,7 +29,11 @@ This study was conducted in an attempt to broadly delineate the effects of affec
     * Debriefing: Our debriefing offered to participants following the study.
     * wordcomp.pdf: A copy of the copyrighted Word Completion Task used to gather the twenty words used in this study. 
 * **Presentation**: A folder containing the presentation materials that includes:
-    * README.md: Provides the link for the presentation.
+    * Click HERE.pdf: provides a pdf file with a link to my presentation.
+    * EmotionandRecallPresentation.pdf: A pdf file of the poster.
+    * EmotionandRecallPresentation.pptx: A PowerPoint file of the poster (with no audio)
+    * README.md: A README file of the information on that page.
+    
 
 
 * **README.md**: A README file of the information on this page.

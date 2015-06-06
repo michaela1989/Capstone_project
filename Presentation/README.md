@@ -1,6 +1,6 @@
 #Walkthrough of the Poster and Experiment
 
-THe files above offer a walkthrough of the poster and presentation.
+The files above offer a walkthrough of the poster and presentation.
 
 The PDF file is the poster only (with no audio).
 
