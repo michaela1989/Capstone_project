@@ -1,8 +1,6 @@
 #Walkthrough of the Poster and Experiment
 
-###Michaela
-
-Here's a walkthrough of the presentation.
+THe files above offer a walkthrough of the poster and presentation.
 
 The PDF file is the poster only (with no audio).
 
